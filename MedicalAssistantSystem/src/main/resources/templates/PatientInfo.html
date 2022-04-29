@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Patient Information
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="PatientInfo.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="heading">Medical Assistant System</div>
+            </div>
+        
+            <div class="body">
+                <div class="left">
+
+                    <div class="instruction">Please enter all the details</div>
+                    
+                    <div class="attributes">
+                        
+                        <div class="aadhaarId">
+                            <label for="aadhaarId">Aadhaar Id:</label>
+                            <input type="text" id="aadhaarId" name="aadhaarId" value="">
+                        </div>
+
+                        <div class="firstName">
+                            
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" value="">
+                        </div>
+
+                        <div class="lastName">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" value="">
+                        </div>
+
+                        <div class="age">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" value="0">
+                        </div>
+
+                        <div class="gender">
+                            <label for="gender">Gender:</label>
+                            <input type="text" id="gender" name="gender" value="">
+                        </div>
+
+                        <div class="healthIssue">
+                            <label for="healthIssue">Health Issue:</label>
+                            <input type="text" id="healthIssue" name="healthIssue" value="">
+                        </div>
+
+                        <div class="phoneNo">
+                            <label for="phoneNo">Phone Number:</label>
+                            <input type="text" id="phoneNo" name="phoneNo" value="">
+                        </div>
+
+                        <div class="address">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" value="">
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="back" name="back">Back</button>
+                        <button id="reset" name="reset" type="button">Reset</button>
+                        <button id="next" name="next">Submit</button>
+                    </div>
+                </div>
+
+                <div class="right">
+
+                    <div class="imageHolder">
+                        <img src="images/FirstAid.png" alt="logo">
+                    </div>
+
+                    <div class="messageHolder">
+                        <div class="message">
+                            People below the age of 18 years need to be accompanied by an adult to the
+                            hospital.
+                        </div>
+                    </div>
+
+                    <div class="errorMessages" th:if="${idError} != null">
+                        <p th:text="${idError}"></p>
+                    </div>
+
+                    <div class="errorMessages" th:if="${titleError} != null">
+                        <p th:text="${titleError}"></p>
+                    </div>
+
+                    <div class="errorMessages" th:if="${codeError} != null">
+                        <p th:text="${codeError}"></p>
+                    </div>
+
+                    <div class="errorMessages" th:if="${totalQuestionsError} != null">
+                        <p th:text="${totalQuestionsError}"></p>
+                    </div>
+
+                    <div class="errorMessages" th:if="${durationError} != null">
+                        <p th:text="${durationError}"></p>
+                    </div>
+
+                    <div class="errorMessages" th:if="${maximumMarksError} != null">
+                        <p th:text="${maximumMarksError}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src = "PatientInfo.js"></script>
+    </body>
+</html>

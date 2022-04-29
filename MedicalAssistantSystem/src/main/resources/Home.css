@@ -1,0 +1,90 @@
+body{
+    background-color: lightgoldenrodyellow;
+
+    min-width: 18cm;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 2px solid lightcoral;
+}
+
+.title{
+    width: 100%;
+
+    font-size: 3.1rem;
+
+    text-align: center;
+
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+.welcome{
+    text-align: center;
+
+    margin-top: 2%;
+
+    font-style: italic;
+    font-size: 2.3rem;
+
+    color: black;
+}
+
+.proceed{
+    text-align: center;
+}
+
+.proceedButton{
+    font-size: 1.8rem;
+
+    margin-top: 2%;
+
+    border: 2px solid black;
+}
+
+button{
+    width: 20%;
+    height: 80%;
+
+    background-color: lightgoldenrodyellow;
+
+    margin-top: 0.22%;
+
+    cursor: pointer;
+
+    appearance: none;
+    background-color: lightgreen;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: lightblue 0 -3px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+button:active {
+    transform: scale(1.025);
+}

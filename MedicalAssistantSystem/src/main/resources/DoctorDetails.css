@@ -1,0 +1,166 @@
+body{
+    background-color: lightgoldenrodyellow;
+
+    min-width: 18cm;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 630px;
+
+    border: 2px solid black;
+}
+
+.header{
+
+    height: 10%;
+    border-bottom: 2px solid lightcoral;
+}
+
+.title{
+    width: 100%;
+
+    font-size: 3.1rem;
+
+    text-align: center;
+
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.information{
+    text-align: center;
+
+    height: 80%;
+
+    font-style: italic;
+    font-size: 1.2rem;
+
+    color: black;
+
+    overflow-y: scroll;
+}
+
+.specializationHeading{
+    font-size: 2.2rem;
+
+    border-bottom: 2px solid orange;
+    color: green;
+    text-shadow: 1px 1px 1px black;
+
+    font-style: italic;
+}
+
+.doctorBox{
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 550px;
+    height: 20%;
+
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.left{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: scroll;
+}
+
+.right{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: scroll;
+
+    border-left: 2px solid black;
+}
+
+.credentials{
+    border-bottom: 2px solid black;
+}
+
+.credential{
+    width: 100%;
+
+    text-align: left;
+}
+
+.footer{
+    text-align: center;
+}
+
+.backButton{
+    font-size: 1.2rem;
+
+    border: 2px solid black;
+}
+
+button{
+    width: 90px;
+    height: 100%;
+
+    background-color: lightgoldenrodyellow;
+
+    margin-top: 0.22%;
+
+    cursor: pointer;
+
+    appearance: none;
+    background-color: lightgreen;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: lightblue 0 -3px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+button:active {
+    transform: scale(1.025);
+}

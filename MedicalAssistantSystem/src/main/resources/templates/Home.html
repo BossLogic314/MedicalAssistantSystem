@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="Home.css">
+    </head>
+
+    <body>
+        <div class="header">
+
+            <div class="title">Medical Assistant System</div>
+
+        </div>
+
+        <div class="welcome">Welcome! Click on the button below to proceed forward.</div>
+
+        
+        <div class="proceed">
+
+            <form th:action="@{/homePage}" method="post">
+                <button class="proceedButton">Proceed</button>
+            </form>
+            
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="Appointment.css">
+    </head>
+
+    <body>
+        <div class="header">
+
+            <div class="title">Medical Assistant System</div>
+
+        </div>
+
+        <div class="welcome">Welcome! Click on the button below to proceed forward.</div>
+
+        <div class="proceed">
+
+            <form th:action="@{/appointmentPage}" method="post">
+                <button class="proceedButton">Proceed</button>
+            </form>
+
+        </div>
+
+    </body>
+</html>
